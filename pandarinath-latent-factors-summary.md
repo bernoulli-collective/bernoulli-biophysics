@@ -4,7 +4,7 @@ order: 1
 label: Latent Factors and Dynamics in Motor Cortex
 ---
 
-# Latent Factors and Dynamics in Motor Cortex and Their Application to Brain–Machine Interfaces (Summary)
+# Latent Factors and Dynamics in Motor Cortex and Their Application to Brain–Machine Interfaces
 
 Source: https://bpb-us-e1.wpmucdn.com/sites.gatech.edu/dist/6/426/files/2019/03/Pandarinath-et-al.-2018-Latent-Factors-and-Dynamics-in-Motor-Cortex-and-Their-Application-to-Brain%E2%80%93Machine-Interfaces.pdf?bid=426
 Date: 2026-04-23

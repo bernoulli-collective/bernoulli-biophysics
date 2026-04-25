@@ -4,7 +4,7 @@ order: 2
 label: Statistical Mechanics in Neuroscience
 ---
 
-# Statistical Mechanics Techniques in Neuroscience (Summary)
+# Statistical Mechanics Techniques in Neuroscience 
 
 ## Executive Summary
 Statistical mechanics is an established methodological language in neuroscience, but it is used in several partly overlapping ways rather than as one uniform program.[1][14][24] The literature reviewed here separates into four main programs: maximum-entropy and inverse-Ising models for neural population activity, attractor and spin-glass-inspired network theory for memory and computation, criticality, scaling, and renormalization approaches for collective brain dynamics, and a newer nonequilibrium/statistical-thermodynamics program focused on irreversibility and entropy flow.[1][13][14][15][24][28]

@@ -4,7 +4,7 @@ order: 1
 label: Focused Ultrasound Techniques
 ---
 
-# State of the Art Focused Ultrasound Techniques (Review)
+# State of the Art Focused Ultrasound Techniques
 
 ## Executive Summary
 Focused ultrasound (FUS) is better understood as a family of acoustic interventions that operate in different physical regimes rather than as a single technique.[1,10,16] The most clinically mature branch in routine use is image-guided thermal ablation, especially MR-guided focused ultrasound (MRgFUS) for uterine fibroids and for lesioning in medication-refractory essential tremor.[1,6,7] A second branch, mechanical ablation via histotripsy, has moved from preclinical work to early clinical translation in liver tumors, with first-in-human, pivotal single-arm, and early post-clearance safety data now available for cavitation-cloud histotripsy.[10,12,13,14] A third branch, low-intensity transcranial focused ultrasound, includes blood-brain barrier (BBB) opening, drug delivery, and neuromodulation; the strongest current human evidence in this group is for repeatable procedural target engagement and short-term safety rather than durable disease-level efficacy.[16,17,18,19,20,21,22,23]

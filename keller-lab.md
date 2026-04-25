@@ -4,7 +4,7 @@ order: 3
 label: Keller Lab
 ---
 
-# Research Canon: Precision Neurotherapeutics Lab
+# Precision Neurotherapeutics Lab
 
 **PI:** Corey J. Keller, MD, PhD — Stanford University
 **Source:** https://precisionneuro.stanford.edu/

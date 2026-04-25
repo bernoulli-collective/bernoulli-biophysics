@@ -6,6 +6,7 @@ import './App.css'
 const modules = import.meta.glob('../../../*.md', { query: '?raw', import: 'default', eager: true }) as Record<string, string>
 
 const GROUPS = [
+  { id: 'meta', label: 'Meta' },
   { id: 'literature-reviews', label: 'Literature Reviews' },
   { id: 'lab-canons', label: 'Lab Canons' },
   { id: 'math-and-physics-of-neuroscience', label: 'Math and Physics of Neuroscience' },
@@ -215,7 +216,7 @@ export default function App() {
     <div className="app">
       <div className="toc-page">
         <p className="site-title">Notes towards Neurostimulation and Mathematical Neuroscience</p>
-        <p><i>With contributions from @adiabaticgarden</i></p>
+        <p><i>With contributions from various research agents coordinated by @adiabaticgarden. Work in progress.</i></p>
         <ol>
           {GROUPS.map((group) => (
             <Fragment key={group.id}>

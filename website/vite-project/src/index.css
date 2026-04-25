@@ -134,8 +134,8 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
 }
 
 section {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   border-bottom: 1px solid var(--rule);
 }
 section:last-child { border-bottom: none; }

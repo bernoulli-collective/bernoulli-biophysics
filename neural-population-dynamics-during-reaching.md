@@ -4,7 +4,7 @@ order: 2
 label: Neural Population Dynamics during Reaching
 ---
 
-# Neural population dynamics during reaching (Summary)
+# Neural population dynamics during reaching
 
 Source: https://pmc.ncbi.nlm.nih.gov/articles/PMC3393826/
 Date: 2026-04-23
