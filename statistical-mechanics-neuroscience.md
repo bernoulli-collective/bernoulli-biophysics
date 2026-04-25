@@ -1,18 +1,24 @@
-# Statistical Mechanics Techniques in Neuroscience
+---
+group: literature-reviews
+order: 2
+label: Statistical Mechanics in Neuroscience
+---
+
+# Statistical Mechanics Techniques in Neuroscience (Summary)
 
 ## Executive Summary
-Statistical mechanics is an established methodological language in neuroscience, but it is used in several partly overlapping ways rather than as one uniform program.[1][14][24] The literature reviewed here separates into four main programs: **maximum-entropy and inverse-Ising models for neural population activity**, **attractor and spin-glass-inspired network theory for memory and computation**, **criticality, scaling, and renormalization approaches for collective brain dynamics**, and a newer **nonequilibrium/statistical-thermodynamics program** focused on irreversibility and entropy flow.[1][13][14][15][24][28]
+Statistical mechanics is an established methodological language in neuroscience, but it is used in several partly overlapping ways rather than as one uniform program.[1][14][24] The literature reviewed here separates into four main programs: maximum-entropy and inverse-Ising models for neural population activity, attractor and spin-glass-inspired network theory for memory and computation, criticality, scaling, and renormalization approaches for collective brain dynamics, and a newer nonequilibrium/statistical-thermodynamics program focused on irreversibility and entropy flow.[1][13][14][15][24][28]
 
-Within this review set, **pairwise maximum-entropy / inverse-Ising methods** and **mean-field or attractor-network theory** are among the more methodologically developed data-facing approaches.[1][12][15][17] The most debated area is **brain criticality**: recent reviews and critiques argue against a simple consensus that the brain sits exactly at a critical point, and instead discuss near-critical, reverberating, or quasicritical alternatives.[25][27][32][36] A fast-moving newer frontier is **nonequilibrium statistical mechanics**, where recent work estimates entropy production, irreversibility, or time-varying entropy flow from neural data.[13][28]
+Within this review set, pairwise maximum-entropy / inverse-Ising methods and mean-field or attractor-network theory are among the more methodologically developed data-facing approaches.[1][12][15][17] The most debated area is brain criticality: recent reviews and critiques argue against a simple consensus that the brain sits exactly at a critical point, and instead discuss near-critical, reverberating, or quasicritical alternatives.[25][27][32][36] A fast-moving newer frontier is nonequilibrium statistical mechanics, where recent work estimates entropy production, irreversibility, or time-varying entropy flow from neural data.[13][28]
 
 A short synthesis is:
-- **Best-established use in this review set:** maximum-entropy models as interpretable population baselines rather than universal explanations.[1][11][12]
-- **A comparatively well-validated theory tradition in this review set:** attractor and mean-field models for memory, navigation, and persistent activity.[15][17][21][22]
-- **Most debated claim:** whether critical-like statistics imply a deep organizing principle or a descriptive pattern sensitive to coarse-graining, subsampling, and model choice.[25][27][32][36]
-- **One promising recent direction:** nonstationary and nonequilibrium statistical mechanics of neural dynamics.[13][28]
+- Best-established use in this review set: maximum-entropy models as interpretable population baselines rather than universal explanations.[1][11][12]
+- A comparatively well-validated theory tradition in this review set: attractor and mean-field models for memory, navigation, and persistent activity.[15][17][21][22]
+- Most debated claim: whether critical-like statistics imply a deep organizing principle or a descriptive pattern sensitive to coarse-graining, subsampling, and model choice.[25][27][32][36]
+- One promising recent direction: nonstationary and nonequilibrium statistical mechanics of neural dynamics.[13][28]
 
 ## Scope and Method
-This review emphasizes literature from **2015–2026**, while including older landmark papers when they remain foundational for current usage.[1][4][24][28] The aim is methodological rather than encyclopedic: to identify the main statistical-mechanics techniques used in neuroscience, where they succeed, where they fail, and where the main live controversies remain.[1][15][25]
+This review emphasizes literature from 2015–2026, while including older landmark papers when they remain foundational for current usage.[1][4][24][28] The aim is methodological rather than encyclopedic: to identify the main statistical-mechanics techniques used in neuroscience, where they succeed, where they fail, and where the main live controversies remain.[1][15][25]
 
 The review draws primarily on review articles, landmark theory papers, and representative primary applications spanning neural population coding, recurrent network theory and attractor dynamics, hippocampal and grid-cell memory/navigation models, criticality and avalanche analysis, renormalization/coarse-graining, and nonequilibrium neural dynamics.[1][6][15][22][24][25][28][33]
 
@@ -50,12 +56,12 @@ Maximum-entropy models describe neural population activity using the least-struc
 The classic motivation came from Schneidman et al., who showed that even weak pairwise correlations in retinal populations can imply strongly collective network states.[4] That result made statistical mechanics central to neural coding because it suggested that low-order interactions can strongly constrain large-scale population behavior.[4] Later work extended this line of analysis beyond retina to hippocampus, cortex, and whole-brain fMRI.[6][10][11][12]
 
 ### What the modern literature says
-The field now treats pairwise maximum-entropy models less as universal explanations and more as **strong baselines**.[1][2][12] They often work well for small to moderate neural populations and in some sensory systems, but their quality can degrade for larger populations, heterogeneous cortex, or settings where higher-order interactions and nonstationarity matter.[7][11][12][13]
+The field now treats pairwise maximum-entropy models less as universal explanations and more as strong baselines.[1][2][12] They often work well for small to moderate neural populations and in some sensory systems, but their quality can degrade for larger populations, heterogeneous cortex, or settings where higher-order interactions and nonstationarity matter.[7][11][12][13]
 
 Three themes recur in the recent literature:
-1. **Pairwise structure is often informative but not always sufficient.** In the sources reviewed here, pairwise models explain a large fraction of activity structure in some sensory populations, while at least one prominent executive-cortex study found stronger evidence for higher-order interactions.[11][12]
-2. **Static equilibrium models have scale limits.** Larger populations, larger bins, and higher firing rates can degrade fit quality, and some pairwise fits can show pathological behavior such as unrealistic bimodality or non-ergodicity.[7][12]
-3. **Dynamic and nonequilibrium extensions are increasingly important.** Continuous-time inverse Ising, kinetic Ising, and state-space variants aim to capture temporal couplings and nonstationary entropy flow instead of only static snapshots.[9][13]
+1. Pairwise structure is often informative but not always sufficient. In the sources reviewed here, pairwise models explain a large fraction of activity structure in some sensory populations, while at least one prominent executive-cortex study found stronger evidence for higher-order interactions.[11][12]
+2. Static equilibrium models have scale limits. Larger populations, larger bins, and higher firing rates can degrade fit quality, and some pairwise fits can show pathological behavior such as unrealistic bimodality or non-ergodicity.[7][12]
+3. Dynamic and nonequilibrium extensions are increasingly important. Continuous-time inverse Ising, kinetic Ising, and state-space variants aim to capture temporal couplings and nonstationary entropy flow instead of only static snapshots.[9][13]
 
 ### What this technique is good for
 - interpretable null-plus models of population activity,[1][12]
@@ -98,10 +104,10 @@ Replica methods, interpolation techniques, and related spin-glass tools remain u
 This branch asks whether neural systems operate near collective regimes analogous to phase transitions, where scaling laws, avalanches, or renormalization patterns emerge.[24][25] It includes neuronal avalanche analysis, crackling-noise relations, branching-process ideas, and phenomenological renormalization/coarse-graining.[24][25][27][33]
 
 ### What is well supported
-Many studies report **critical-like statistics** in neural data, including heavy-tailed avalanches, scaling relations, intermediate-state signatures, crackling-noise behavior, and coarse-graining structure across cortical recordings, zebrafish whole-brain imaging, and human neuroimaging.[24][26][29][30][31][33][34] These findings support the claim that critical-like phenomenology is widespread, but they do not by themselves resolve the interpretation debate.[25][27][36]
+Many studies report critical-like statistics in neural data, including heavy-tailed avalanches, scaling relations, intermediate-state signatures, crackling-noise behavior, and coarse-graining structure across cortical recordings, zebrafish whole-brain imaging, and human neuroimaging.[24][26][29][30][31][33][34] These findings support the claim that critical-like phenomenology is widespread, but they do not by themselves resolve the interpretation debate.[25][27][36]
 
 ### What is controversial
-The strongest disagreement concerns interpretation. The current literature does **not** support a simple consensus that the brain sits exactly at an equilibrium critical point.[25][27][32][36] Instead, several positions coexist:
+The strongest disagreement concerns interpretation. The current literature does not support a simple consensus that the brain sits exactly at an equilibrium critical point.[25][27][32][36] Instead, several positions coexist:
 - exact criticality,[24][26][30]
 - self-organized criticality,[26]
 - reverberating or near-critical dynamics,[25]
@@ -114,7 +120,7 @@ This debate persists because conclusions are sensitive to avalanche definition, 
 Renormalization-style approaches matter because they test whether collective neural variables transform systematically under coarse-graining rather than relying only on power-law fitting.[14][33] Recent whole-brain work applies phenomenological RG to resting-state fMRI and links scaling exponents to connectivity assumptions,[33] while one recent theoretical preprint attempts to assign stochastic spiking networks to universality classes.[35] These are promising developments, but the strongest universality-class claims remain preprint-stage and should be treated as emerging rather than settled.[35]
 
 ### Current best synthesis
-A cautious synthesis is that many neural systems appear **near special collective regimes**, but the exact nature of those regimes remains unsettled.[25][27][32][36] In current usage, labels such as **near-critical**, **quasicritical**, or **reverberating** are often better supported than claims of exact criticality.[25][32][36]
+A cautious synthesis is that many neural systems appear near special collective regimes, but the exact nature of those regimes remains unsettled.[25][27][32][36] In current usage, labels such as near-critical, quasicritical, or reverberating are often better supported than claims of exact criticality.[25][32][36]
 
 ## Technique Family 4: Nonequilibrium Statistical Mechanics
 ### Core idea
@@ -135,18 +141,18 @@ This remains an early field, so broad claims should be treated cautiously, but i
 
 ## Cross-Cutting Themes
 Across the sources sampled here, several patterns recur:
-1. **Statistical mechanics is a genuine method family in neuroscience, not just metaphor.**[1][14][24]
-2. **Maximum-entropy models are among the most mature data-facing tools.**[1][10][12]
-3. **Attractor theory has become more experimentally anchored, especially in memory and navigation systems.**[15][21][22]
-4. **Criticality remains active but controversial.** Critical-like statistics are widely reported, but their interpretation remains disputed.[25][27][29][30][32][36]
-5. **Nonequilibrium methods are expanding because equilibrium descriptions are often too restrictive for behaving brains.**[13][28]
+1. Statistical mechanics is a genuine method family in neuroscience, not just metaphor.[1][14][24]
+2. Maximum-entropy models are among the most mature data-facing tools.[1][10][12]
+3. Attractor theory has become more experimentally anchored, especially in memory and navigation systems.[15][21][22]
+4. Criticality remains active but controversial. Critical-like statistics are widely reported, but their interpretation remains disputed.[25][27][29][30][32][36]
+5. Nonequilibrium methods are expanding because equilibrium descriptions are often too restrictive for behaving brains.[13][28]
 
 ## Main Disagreements and Controversies
-1. **Pairwise sufficiency:** when are pairwise maximum-entropy models enough, and when do higher-order terms matter?[7][11][12]
-2. **Connectivity interpretation:** can inferred Ising couplings be read as structure, or only as effective interactions?[8][9][18]
-3. **Criticality claims:** do avalanche and scaling signatures imply a genuine phase transition, or can they arise from alternative mechanisms?[25][27][32][36]
-4. **Equilibrium versus nonequilibrium modeling:** when is equilibrium a good approximation, and when does it obscure the main physics?[13][28]
-5. **Biological realism versus analytic tractability:** how much of real cortex survives once symmetric couplings, binary neurons, or stationarity assumptions are relaxed?[15][16][17][19]
+1. Pairwise sufficiency: when are pairwise maximum-entropy models enough, and when do higher-order terms matter?[7][11][12]
+2. Connectivity interpretation: can inferred Ising couplings be read as structure, or only as effective interactions?[8][9][18]
+3. Criticality claims: do avalanche and scaling signatures imply a genuine phase transition, or can they arise from alternative mechanisms?[25][27][32][36]
+4. Equilibrium versus nonequilibrium modeling: when is equilibrium a good approximation, and when does it obscure the main physics?[13][28]
+5. Biological realism versus analytic tractability: how much of real cortex survives once symmetric couplings, binary neurons, or stationarity assumptions are relaxed?[15][16][17][19]
 
 ## Open Questions
 1. Can higher-order or latent-variable extensions outperform pairwise MEM in large cortical populations without losing interpretability?[11][12]

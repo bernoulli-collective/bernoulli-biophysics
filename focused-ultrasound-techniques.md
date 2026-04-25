@@ -1,4 +1,10 @@
-# State of the Art Focused Ultrasound Techniques
+---
+group: literature-reviews
+order: 1
+label: Focused Ultrasound Techniques
+---
+
+# State of the Art Focused Ultrasound Techniques (Review)
 
 ## Executive Summary
 Focused ultrasound (FUS) is better understood as a family of acoustic interventions that operate in different physical regimes rather than as a single technique.[1,10,16] The most clinically mature branch in routine use is image-guided thermal ablation, especially MR-guided focused ultrasound (MRgFUS) for uterine fibroids and for lesioning in medication-refractory essential tremor.[1,6,7] A second branch, mechanical ablation via histotripsy, has moved from preclinical work to early clinical translation in liver tumors, with first-in-human, pivotal single-arm, and early post-clearance safety data now available for cavitation-cloud histotripsy.[10,12,13,14] A third branch, low-intensity transcranial focused ultrasound, includes blood-brain barrier (BBB) opening, drug delivery, and neuromodulation; the strongest current human evidence in this group is for repeatable procedural target engagement and short-term safety rather than durable disease-level efficacy.[16,17,18,19,20,21,22,23]
@@ -6,7 +12,7 @@ Focused ultrasound (FUS) is better understood as a family of acoustic interventi
 Across technique families, the reviewed literature suggests that the main frontier is no longer basic feasibility alone, but reliable anatomy-aware control: delivering energy through bone, fat, gas, and vessels; monitoring the intended biological effect in real time; and showing durable clinical benefit beyond technical success.[2,3,4,5,10,11,15,17,22,23]
 
 ## Scope and Method
-This review emphasizes literature from **2018–2025**, with older landmark papers included when they define the modern field.
+This review emphasizes literature from 2018–2025, with older landmark papers included when they define the modern field.
 
 I prioritized:
 - review papers that synthesize the field,
@@ -14,7 +20,7 @@ I prioritized:
 - guideline-style technical papers for treatment planning and monitoring,
 - official web sources only for current regulatory or field-status context.
 
-The review is organized by physical regime and clinical maturity rather than by organ alone, because the most important distinctions in FUS depend on whether tissue effects are mainly **thermal**, **mechanical/cavitation-mediated**, or **low-intensity modulatory/permeabilizing**.[10,16]
+The review is organized by physical regime and clinical maturity rather than by organ alone, because the most important distinctions in FUS depend on whether tissue effects are mainly thermal, mechanical/cavitation-mediated, or low-intensity modulatory/permeabilizing.[10,16]
 
 ## Taxonomy of Focused Ultrasound Techniques
 Recent reviews consistently separate major FUS applications into thermal ablation, mechanical cavitation-mediated ablation, and low-intensity transcranial uses such as BBB opening and neuromodulation.[1,10,16]
@@ -39,11 +45,11 @@ flowchart TD
 ```
 
 ### Practical taxonomy
-1. **Thermal ablation / HIFU / MRgFUS**  
+1. Thermal ablation / HIFU / MRgFUS  
    High acoustic intensities deposit heat at the focus to create coagulative necrosis or stereotactic lesions.[1,2,16]
-2. **Mechanical ablation / histotripsy**  
+2. Mechanical ablation / histotripsy  
    Short, high-pressure pulses use cavitation clouds or boiling-mediated bubble dynamics to mechanically fractionate tissue rather than relying primarily on thermal coagulation.[10,11]
-3. **Low-intensity transcranial techniques**  
+3. Low-intensity transcranial techniques  
    Lower-intensity exposures are used either to open the BBB transiently, usually with microbubbles, or to modulate neural circuits without intended ablation.[16,17,22,23]
 
 ## Technique Family 1: Thermal Ablation and HIFU
@@ -79,10 +85,10 @@ Recurring technical and translational problems across low-intensity transcranial
 ## Imaging, Targeting, Monitoring, and Control
 Across families, the state of the art increasingly depends on the monitoring stack:
 
-- **MRI thermometry** remains central for thermal MRgFUS, especially in brain and many soft-tissue workflows.[2,5]
-- **Post-treatment MRI**, including nonperfused volume assessment and diffusion-weighted imaging, remains important because intraprocedural dose maps are imperfect surrogates for final effect.[3,6,9]
-- **Ultrasound-based cavitation monitoring** is central for histotripsy and BBB-opening workflows, but robust closed-loop clinical control remains incomplete.[10,11,15,17]
-- **Patient-specific compensation** for skull, bone, gas, and tissue heterogeneity is a cross-family requirement.[2,4,17,23]
+- MRI thermometry remains central for thermal MRgFUS, especially in brain and many soft-tissue workflows.[2,5]
+- Post-treatment MRI, including nonperfused volume assessment and diffusion-weighted imaging, remains important because intraprocedural dose maps are imperfect surrogates for final effect.[3,6,9]
+- Ultrasound-based cavitation monitoring is central for histotripsy and BBB-opening workflows, but robust closed-loop clinical control remains incomplete.[10,11,15,17]
+- Patient-specific compensation for skull, bone, gas, and tissue heterogeneity is a cross-family requirement.[2,4,17,23]
 
 A unifying observation from this literature set is that progress in FUS is increasingly driven by control quality and measurement quality, not only by raw acoustic power.[2,5,10,17]
 
@@ -98,30 +104,30 @@ A unifying observation from this literature set is that progress in FUS is incre
 ## Quantitative Milestones
 Selected source-linked textual milestones:
 
-- A foundational uterine fibroid MRgFUS thermometry study evaluated **64 fibroids in 50 women**.[6]
-- The pivotal randomized sham-controlled essential tremor thalamotomy trial enrolled **76 patients**.[7]
-- The multicenter phase 2b prostate focal-therapy study enrolled **101 men**, with **89 evaluable at 24 months** for the reported treated-area outcome.[8]
-- The THERESA first-in-human liver histotripsy study treated **8 patients with 11 tumors**.[12]
-- The #HOPE4LIVER pivotal liver histotripsy trial treated **44 participants with 49 tumors**.[13]
-- A phase I Alzheimer’s BBB-opening study enrolled **5 patients**.[19]
-- A later Alzheimer’s BBB-opening study reported **10 participants completing 30 treatments** across two institutions.[21]
-- A double-blind, sham-controlled thalamic neuromodulation study enrolled **19 healthy participants**.[24]
+- A foundational uterine fibroid MRgFUS thermometry study evaluated 64 fibroids in 50 women.[6]
+- The pivotal randomized sham-controlled essential tremor thalamotomy trial enrolled 76 patients.[7]
+- The multicenter phase 2b prostate focal-therapy study enrolled 101 men, with 89 evaluable at 24 months for the reported treated-area outcome.[8]
+- The THERESA first-in-human liver histotripsy study treated 8 patients with 11 tumors.[12]
+- The #HOPE4LIVER pivotal liver histotripsy trial treated 44 participants with 49 tumors.[13]
+- A phase I Alzheimer’s BBB-opening study enrolled 5 patients.[19]
+- A later Alzheimer’s BBB-opening study reported 10 participants completing 30 treatments across two institutions.[21]
+- A double-blind, sham-controlled thalamic neuromodulation study enrolled 19 healthy participants.[24]
 
 Interpretation: these selected landmarks suggest that thermal ablation reached larger human cohorts earlier, histotripsy entered human liver studies later but accelerated quickly, and BBB-opening and neuromodulation studies remain comparatively small. This is a descriptive summary of selected landmark studies in this review, not a systematic meta-analysis.[6,7,8,12,13,19,21,24]
 
 ## Cross-study Themes in the Reviewed Literature
 Across the literature reviewed, the following themes recur:
-1. **Focused ultrasound is a platform, not a single treatment.** Different acoustic regimes create fundamentally different biological effects.[1,10,16]
-2. **Thermal MRgFUS is the most clinically mature branch.** Its best-established use cases are concentrated in selected indications rather than broadly across all organs.[1,2,6,7]
-3. **Histotripsy is the main nonthermal breakthrough.** Liver is the clearest current clinical beachhead.[10,12,13,14]
-4. **BBB opening appears technically ahead of neuromodulation in human target-engagement evidence.** That comparison should still be read as a synthesis of the reviewed studies, not as a settled field-wide ranking.[17,19,20,21,22,23]
-5. **Monitoring and control are a major frontier.** Better delivery through heterogeneous anatomy and better effect verification are recurrent needs across families.[2,4,5,10,15,17]
+1. Focused ultrasound is a platform, not a single treatment. Different acoustic regimes create fundamentally different biological effects.[1,10,16]
+2. Thermal MRgFUS is the most clinically mature branch. Its best-established use cases are concentrated in selected indications rather than broadly across all organs.[1,2,6,7]
+3. Histotripsy is the main nonthermal breakthrough. Liver is the clearest current clinical beachhead.[10,12,13,14]
+4. BBB opening appears technically ahead of neuromodulation in human target-engagement evidence. That comparison should still be read as a synthesis of the reviewed studies, not as a settled field-wide ranking.[17,19,20,21,22,23]
+5. Monitoring and control are a major frontier. Better delivery through heterogeneous anatomy and better effect verification are recurrent needs across families.[2,4,5,10,15,17]
 
 ## Disagreements and Uncertainties
-1. **How close neuromodulation is to clinical readiness.** Reviews agree it is promising, but they differ in tone because the evidence base is still small and heterogeneous.[22,23]
-2. **How broadly to generalize histotripsy success beyond liver.** Current clinical evidence is strongest in relatively small liver lesions, so broader claims would be premature.[12,13,14]
-3. **How much BBB opening alone can modify disease biology.** Some Alzheimer’s studies report imaging or biomarker changes, but effect variability and small samples limit confidence.[19,21]
-4. **Which monitoring modality should dominate next-generation workflows.** Diffusion-weighted MRI, thermal dosimetry, passive cavitation methods, and Doppler methods all show promise, but no universal endpoint has emerged.[3,5,9,11,15]
+1. How close neuromodulation is to clinical readiness. Reviews agree it is promising, but they differ in tone because the evidence base is still small and heterogeneous.[22,23]
+2. How broadly to generalize histotripsy success beyond liver. Current clinical evidence is strongest in relatively small liver lesions, so broader claims would be premature.[12,13,14]
+3. How much BBB opening alone can modify disease biology. Some Alzheimer’s studies report imaging or biomarker changes, but effect variability and small samples limit confidence.[19,21]
+4. Which monitoring modality should dominate next-generation workflows. Diffusion-weighted MRI, thermal dosimetry, passive cavitation methods, and Doppler methods all show promise, but no universal endpoint has emerged.[3,5,9,11,15]
 
 ## Open Questions
 1. What is the best closed-loop control framework for each regime: thermal dose, DWI, cavitation emissions, Doppler motion signatures, or multimodal fusion?[3,5,9,11,15]
@@ -132,10 +138,10 @@ Across the literature reviewed, the following themes recur:
 
 ## Recommended Next Experiments and Follow-up Reading
 ### Next experiments
-1. **Closed-loop monitoring comparisons**: compare thermal dose, DWI, cavitation imaging, and Doppler-derived metrics against final tissue effect in the same workflow.[3,5,9,11,15]
-2. **Comparative clinical trials for histotripsy**: especially in liver and, when feasible, kidney or pancreas versus established local therapies.[12,13,14]
-3. **Protocol-standardization studies for BBB opening**: harmonize pressure, microbubble, imaging, and safety reporting across centers.[17,18]
-4. **Mechanism-focused neuromodulation studies**: include auditory-control conditions, skull-aware dosimetry, and preregistered parameter sweeps.[22,23]
+1. Closed-loop monitoring comparisons: compare thermal dose, DWI, cavitation imaging, and Doppler-derived metrics against final tissue effect in the same workflow.[3,5,9,11,15]
+2. Comparative clinical trials for histotripsy: especially in liver and, when feasible, kidney or pancreas versus established local therapies.[12,13,14]
+3. Protocol-standardization studies for BBB opening: harmonize pressure, microbubble, imaging, and safety reporting across centers.[17,18]
+4. Mechanism-focused neuromodulation studies: include auditory-control conditions, skull-aware dosimetry, and preregistered parameter sweeps.[22,23]
 
 ### Follow-up reading shortlist
 - Payne et al., *AAPM Task Group 241* (2021).[2]
@@ -145,7 +151,7 @@ Across the literature reviewed, the following themes recur:
 - Gandhi et al., systematic review of BBB-disruption protocols (2022).[17]
 
 ## Limitations of This Review
-- This is a **targeted literature review**, not a registered systematic review or meta-analysis.
+- This is a targeted literature review, not a registered systematic review or meta-analysis.
 - The quantitative-milestones section is based on selected landmark studies from this review, not exhaustive trial enumeration.[6,7,8,12,13,19,21,24]
 - Some application areas, such as pancreatic thermal HIFU, immunologic combination strategies, and vendor-specific treatment-planning pipelines, were not reviewed in equal depth.
 - Core claims in this review rely primarily on papers rather than field-summary web pages.[1,2,10,16]

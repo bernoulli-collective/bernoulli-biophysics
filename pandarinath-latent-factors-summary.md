@@ -1,8 +1,14 @@
-# Summary: Latent Factors and Dynamics in Motor Cortex and Their Application to Brain–Machine Interfaces
+---
+group: math-and-physics-of-neuroscience
+order: 1
+label: Latent Factors and Dynamics in Motor Cortex
+---
 
-**Source:** https://bpb-us-e1.wpmucdn.com/sites.gatech.edu/dist/6/426/files/2019/03/Pandarinath-et-al.-2018-Latent-Factors-and-Dynamics-in-Motor-Cortex-and-Their-Application-to-Brain%E2%80%93Machine-Interfaces.pdf?bid=426
-**Date:** 2026-04-23
-**Tier:** 3 (14 chunks)
+# Latent Factors and Dynamics in Motor Cortex and Their Application to Brain–Machine Interfaces (Summary)
+
+Source: https://bpb-us-e1.wpmucdn.com/sites.gatech.edu/dist/6/426/files/2019/03/Pandarinath-et-al.-2018-Latent-Factors-and-Dynamics-in-Motor-Cortex-and-Their-Application-to-Brain%E2%80%93Machine-Interfaces.pdf?bid=426
+Date: 2026-04-23
+Tier: 3 (14 chunks)
 
 ## Level 0 — Authors in the field
 Chethan Pandarinath’s research canon centers on neural population dynamics, single-trial latent-state inference, and brain–machine interfaces, especially methods like LFADS that use dynamical-systems and machine-learning ideas to decode intention from noisy motor-cortex activity. In contemporary work, he sits at the interface of systems neuroscience and neuroengineering: less focused on static tuning curves, more on latent population structure that can support robust prosthetic control.
@@ -10,7 +16,7 @@ Chethan Pandarinath’s research canon centers on neural population dynamics, si
 K. Cora Ames and Abigail A. Russo are associated with the Mark Churchland / Columbia dynamical-systems tradition in motor neuroscience, which emphasizes population-level structure, preparation-to-movement reorganization, and geometrical organization of motor-cortex activity. In the current field, that position is a strong alternative to purely representational accounts of motor cortex.
 
 ## Level 1 — Situating the work
-This 2018 Journal of Neuroscience mini-symposium article is not a primary experimental paper with one new result. It is a field-positioning review. Its goal is to consolidate a shift already underway in motor neuroscience: away from asking what individual motor-cortex neurons **encode**, and toward asking what low-dimensional population states and their dynamics **do**.
+This 2018 Journal of Neuroscience mini-symposium article is not a primary experimental paper with one new result. It is a field-positioning review. Its goal is to consolidate a shift already underway in motor neuroscience: away from asking what individual motor-cortex neurons encode, and toward asking what low-dimensional population states and their dynamics do.
 
 The big-picture contribution is to tie together three threads that were often discussed separately:
 1. motor cortex appears to exhibit low-dimensional latent structure,
@@ -21,13 +27,13 @@ Historically, the paper sits after the early representational era of motor neuro
 
 The 3 strongest technical hinges, ranked by originality:
 
-1. **Latent low-dimensional population state is the right explanatory object, not the single neuron.**  
+1. Latent low-dimensional population state is the right explanatory object, not the single neuron.  
    The paper argues that much seemingly high-dimensional motor-cortex activity can be explained by a modest number of latent factors. This directly challenges the older habit of explaining behavior via one-neuron-to-one-variable correlations.
 
-2. **Dynamics matter, not just geometry.**  
+2. Dynamics matter, not just geometry.  
    The review emphasizes that latent factors are not merely a compressed coordinate system; they evolve according to structured temporal rules. That matters because neighboring time points are not independent. This is where the paper pushes beyond PCA-style static summaries toward GPFA, LDS, SLDS, and especially LFADS.
 
-3. **BMI decoding should exploit latent factors and dynamics, not only representational tuning.**  
+3. BMI decoding should exploit latent factors and dynamics, not only representational tuning.  
    This is the most practically ambitious hinge. The paper argues that dynamical priors can denoise neural activity, reveal error-related signals, and stabilize decoding across time and changing recordings. That extends the motor-cortex dynamics program from explanation into engineering.
 
 For a second-year undergraduate: the paper says that motor cortex is less like a spreadsheet where each neuron stores one movement variable, and more like an orchestra whose overall pattern evolves in time. Looking at one instrument is noisy; recovering the hidden score is more informative.
@@ -61,12 +67,12 @@ This framework yields several empirical predictions that the review highlights:
 ### 4. Methods compared
 The review organizes latent-factor methods as a progression.
 
-- **Trial-averaged PCA:** useful for revealing low-dimensional structure in repeated conditions, but limited for single-trial variability.
-- **FA:** better than raw PCA for single-trial data because it separates shared across-neuron variance from independent noise.
-- **GPFA:** imposes smoothness over time on latent trajectories.
-- **LDS:** models latent state transitions with explicit linear dynamics.
-- **SLDS:** allows different dynamical regimes across behavioral phases, such as preparation versus movement.
-- **LFADS:** uses a recurrent neural network in a sequential autoencoder framework to infer single-trial latent dynamics from spikes.
+- Trial-averaged PCA: useful for revealing low-dimensional structure in repeated conditions, but limited for single-trial variability.
+- FA: better than raw PCA for single-trial data because it separates shared across-neuron variance from independent noise.
+- GPFA: imposes smoothness over time on latent trajectories.
+- LDS: models latent state transitions with explicit linear dynamics.
+- SLDS: allows different dynamical regimes across behavioral phases, such as preparation versus movement.
+- LFADS: uses a recurrent neural network in a sequential autoencoder framework to infer single-trial latent dynamics from spikes.
 
 The methodological arc is clear: as you move down this list, the models take temporal structure more seriously. That is exactly the review’s point — treating time bins as independent throws away information.
 

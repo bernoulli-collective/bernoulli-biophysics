@@ -1,0 +1,268 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --bg: #fafaf8;
+  --text: #1a1a1a;
+  --muted: #999;
+  --rule: #d8d8d4;
+  --mono: 'Courier New', Courier, monospace;
+  --serif: Georgia, 'Times New Roman', serif;
+}
+
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+#root { display: flex; flex-direction: column; }
+
+/* ── TOC page ── */
+
+.toc-page {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 72px 24px 72px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.site-title {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: normal;
+  /* font-style: italic; */
+  margin: 0 0 40px;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+/* ── TOC nested ol numbering ──
+   Depth 1 = group           e.g. "1   Literature Reviews"
+   Depth 2 = doc inside grp  e.g. "1.1  Focused Ultrasound Techniques"
+   Depth 3+ = .heading-toc inside each doc, no counter prefix.
+
+   Counter prefix sits in a fixed-width left gutter so titles at the same
+   depth start at the same x-position, and long titles wrap with a hanging
+   indent (wrapped lines align with the title text, not the counter).
+*/
+
+.toc-page ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  counter-reset: toc-l1;
+}
+
+.toc-page > ol > li { counter-increment: toc-l1; }
+
+/* Indent the docs <ol> so each doc counter aligns under the group title text. */
+.toc-page > ol > ol {
+  padding-left: 2.6em;
+  counter-reset: toc-l2;
+}
+.toc-page > ol > ol > li { counter-increment: toc-l2; }
+
+.toc-page ol li {
+  padding: 2px 0;
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.toc-page > ol > li { margin-top: 6px; }
+.toc-page > ol > ol > li { margin-top: 2px; }
+
+/* Hanging indent for the numbered (group + doc) levels. */
+.toc-page > ol > li,
+.toc-page > ol > ol > li {
+  padding-left: 2.6em;
+  text-indent: -2.6em;
+}
+
+.toc-page > ol > li::before,
+.toc-page > ol > ol > li::before {
+  display: inline-block;
+  width: 2.2em;
+  margin-right: 0.4em;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+  text-indent: 0;
+  vertical-align: baseline;
+}
+
+.toc-page > ol > li::before {
+  content: counter(toc-l1);
+}
+.toc-page > ol > ol > li::before {
+  content: counter(toc-l1) "." counter(toc-l2);
+}
+
+/* Per-doc heading-level TOC (h1/h2/h3 of the markdown).
+   No counter; smaller, muted; indents only via deeper nesting. */
+.toc-page .heading-toc {
+  list-style: none;
+  padding-left: 0;
+  margin: 6px 0 4px;
+}
+.toc-page .heading-toc .heading-toc {
+  padding-left: 1em;
+}
+.toc-page .heading-toc li {
+  padding: 1px 0;
+  margin: 0;
+  text-indent: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.toc-page .heading-toc li::before {
+  content: none;
+  display: inline;
+  width: auto;
+  margin: 0;
+}
+.toc-page .heading-toc a { color: var(--muted); }
+.toc-page .heading-toc a:hover { color: var(--text); }
+
+.toc-page ol a { color: var(--text); text-decoration: none; }
+.toc-page ol a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* ── Content ── */
+
+.content {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px 120px;
+}
+
+section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid var(--rule);
+}
+section:last-child { border-bottom: none; }
+
+.section-group {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* Doc sections are visually nested under their group label. */
+.content > section:not(.section-group) {
+  padding-left: 28px;
+}
+.content > section:not(.section-group) .doc-body .mermaid {
+  margin-left: -28px;
+}
+
+.section-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ── Typography ── */
+
+.doc-body {
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.72;
+  color: var(--text);
+}
+
+/* h1 = doc title, sits just below section-label */
+.doc-body h1 {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+  margin: 10px 0 32px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--rule);
+  letter-spacing: 0;
+}
+
+/* h2 = major section within doc */
+.doc-body h2 {
+  display: block;
+  font-family: var(--mono);
+  font-weight: normal;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin: 40px 0 10px;
+}
+
+/* h3 = subsection */
+.doc-body h3 {
+  display: block;
+  font-family: var(--mono);
+  font-weight: normal;
+  font-size: 11px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 28px 0 8px;
+}
+
+.h-num {
+  display: inline-block;
+  font-size: 11px;
+  min-width: 2.4em;
+  opacity: 0.5;
+  margin-right: 0.5em;
+}
+
+.doc-body p { margin: 0 0 12px; }
+
+.doc-body ul, .doc-body ol { padding-left: 18px; margin: 0 0 12px; }
+.doc-body li { margin-bottom: 5px; }
+
+.doc-body strong { font-weight: bold; }
+.doc-body em { font-style: italic; }
+
+.doc-body code {
+  font-family: var(--mono);
+  font-size: 12px;
+  background: #ebebea;
+  padding: 1px 4px;
+  border-radius: 2px;
+}
+
+.doc-body pre {
+  background: #ebebea;
+  padding: 12px 16px;
+  overflow-x: auto;
+  border-radius: 2px;
+  margin: 0 0 12px;
+}
+.doc-body pre code { background: none; padding: 0; font-size: 12px; }
+
+.doc-body pre.mermaid {
+  background: transparent;
+  padding: 0;
+  margin: 12px 0 20px;
+}
+
+.doc-body pre.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.doc-body a { color: var(--text); text-underline-offset: 3px; }
+
+.doc-body blockquote {
+  margin: 16px 0;
+  padding-left: 14px;
+  border-left: 2px solid var(--rule);
+  color: var(--muted);
+  font-style: italic;
+}
+
+.doc-body img {
+  max-width: 100%;
+  height: auto;
+  margin: 8px 0;
+}
