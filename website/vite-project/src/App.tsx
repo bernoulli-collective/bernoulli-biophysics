@@ -215,8 +215,8 @@ export default function App() {
   return (
     <div className="app">
       <div className="toc-page">
-        <p className="site-title">Notes towards Neurostimulation and Mathematical Neuroscience</p>
-        <p><i>With contributions from various research agents coordinated by @adiabaticgarden. Work in progress.</i></p>
+        <p className="site-title">Notes on Mathematical Neuroscience, Neurostimulation, and Systems Thinking</p>
+        <p><i>With contributions from research agents coordinated by @adiabaticgarden. Work in progress.</i></p>
         <ol>
           {GROUPS.map((group) => (
             <Fragment key={group.id}>

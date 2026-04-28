@@ -4,12 +4,10 @@ order: 1
 label: Airan Lab
 ---
 
-# Airan Lab (Canon)
+# Research Canon: Airan Lab
 
 PI: Raag D. Airan — Stanford University
-
 Source: https://airan-lab.stanford.edu/publications/
-
 Date: 2026-04-24
 
 `[lab-canon] lab=Airan Lab source=https://airan-lab.stanford.edu/publications/`
@@ -81,6 +79,9 @@ This paper matters because it turns the uncaging idea from a clever nanomaterial
 - Ultrasonic drug uncaging: spatially targeted pharmacology is more powerful than either diffuse systemic drug delivery or ultrasound-only stimulation when the therapeutic question is chemically specific.[1][5][6][7]
 - Biomodulation and clearance: ultrasound can be therapeutic by changing fluid handling, glial state, and debris clearance, not just by changing neural firing.[2][8]
 - Imaging-led mechanistic psychiatry: network imaging is not a side measurement; it is the main way to decide whether a brain intervention is mechanistically coherent.[3][6][9]
+
+## To go deeper
+Run `/summarize <url>` on any paper above for a full levelled read with hinges and Michelin-table questions.
 
 ## Coverage gaps
 - I manually counted roughly 38 reachable DOI/PubMed-bearing entries on the official publications page across five topic buckets, which is strong enough for a canon map.[1]

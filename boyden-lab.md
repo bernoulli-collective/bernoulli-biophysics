@@ -1,10 +1,10 @@
 ---
 group: lab-canons
-order: 2
+order: 4
 label: Boyden Lab
 ---
 
-# Synthetic Neurobiology Group
+# Research Canon: Synthetic Neurobiology Group
 
 PI: Ed Boyden — Massachusetts Institute of Technology (MIT)
 Source: https://synthneuro.org/publications/

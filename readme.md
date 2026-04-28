@@ -1,11 +1,8 @@
 ## Bernoulli biophysics
 
+Readme is to be updated
 
-### Topics of interest
-- Focused ultrasound
-- Statistical physics for neuroscience
-
-### How to run
+### How to run (Yoyo)
 cd /Users/harvest/nova/bernoulli-biophysics/website/vite-project
 npm run dev
 

@@ -4,11 +4,11 @@ order: 3
 label: Keller Lab
 ---
 
-# Precision Neurotherapeutics Lab
+# Research Canon: Precision Neurotherapeutics Lab
 
-**PI:** Corey J. Keller, MD, PhD — Stanford University
-**Source:** https://precisionneuro.stanford.edu/
-**Date:** 2026-04-24
+PI: Corey J. Keller, MD, PhD — Stanford University
+Source: https://precisionneuro.stanford.edu/
+Date: 2026-04-24
 
 ## In one sentence
 The Precision Neurotherapeutics Lab uses invasive and noninvasive human electrophysiology to turn psychiatric neuromodulation from a largely standardized intervention into a causal, biomarker-driven, and eventually closed-loop science of personalized circuit control.
@@ -38,19 +38,19 @@ What is newer is the explicit move toward state-dependent and behavior-linked pr
 ## Papers ranked by originality
 
 ### 1. Intrinsic functional architecture predicts electrically-evoked responses in the human brain (2011)
-**Source:** https://precisionneuro.stanford.edu/s/Intrinsic-functional-architecture-predicts-electrically-evoked-responses-in-the-human-brain-wdls.pdf
+Source: https://precisionneuro.stanford.edu/s/Intrinsic-functional-architecture-predicts-electrically-evoked-responses-in-the-human-brain-wdls.pdf
 This paper is the canonical seed because it tied resting-state architecture to causal stimulation responses in humans, giving the lab’s later translational work a conceptual bridge between noninvasive maps and perturbational physiology. Its contrastive difference is that, unlike most contemporaneous resting-state work, it did not stop at correlation structure but asked whether that structure predicts the brain’s response to direct stimulation.
 
 ### 2. Cortico-cortical evoked potentials reveal projectors and integrators within human brain networks (2014)
-**Source:** https://precisionneuro.stanford.edu/s/Corticocortical-Evoked-Potentials-Reveal-Projectors-and-Integrators-in-Human-Brain-Networks-3mpd.pdf
+Source: https://precisionneuro.stanford.edu/s/Corticocortical-Evoked-Potentials-Reveal-Projectors-and-Integrators-in-Human-Brain-Networks-3mpd.pdf
 This study stands out because it turns intracranial stimulation from a localization tool into a network-roles framework, distinguishing nodes by how they distribute and integrate causal influence. Its contrastive difference is that, compared with the 2011 paper’s validation of large-scale architecture, it classifies within-network function and gives the lab a reusable language for effective-connectivity structure.
 
 ### 3. Induction and quantification of excitability changes in human cortical networks (2018)
-**Source:** https://precisionneuro.stanford.edu/s/Induction-and-Quantification-of-Excitability-Changes-in-Human-Cortical-Networks-af73.pdf
+Source: https://precisionneuro.stanford.edu/s/Induction-and-Quantification-of-Excitability-Changes-in-Human-Cortical-Networks-af73.pdf
 This is the pivot from mapping circuitry to deliberately changing it and quantifying the change in humans. Its contrastive difference is that, rather than using stimulation mainly to reveal connectivity, it treats repeated stimulation itself as an experimental handle on plasticity and establishes network excitability as a measurable outcome.
 
 ### 4. Effects of transcranial magnetic stimulation on the human brain recorded with intracranial electrocorticography (2024)
-**Source:** https://precisionneuro.stanford.edu/s/Effects-of-transcranial-magnetic-stimulation-on-the-human-brain-recorded-with-intracranial-electroco.pdf
+Source: https://precisionneuro.stanford.edu/s/Effects-of-transcranial-magnetic-stimulation-on-the-human-brain-recorded-with-intracranial-electroco.pdf
 This paper is the clearest translational statement of the current lab: use invasive human recordings to determine what a noninvasive intervention truly does. Its contrastive difference is that, unlike earlier TMS-EEG biomarker studies focused on scalp signatures and artifact control, it validates circuit engagement against intracranial responses, tightening the bridge to personalized clinical stimulation.
 
 ## Coverage gaps
